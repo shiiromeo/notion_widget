@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+      min-height: 100vh; /* Added to center vertically */
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a;
+      transition: 0.3s; /* Makes the color change smooth */
+    }
+
+    /* Hover Colors */
+    .blog:hover { color: #ffbd2f; }
+    .email:hover { color: #23c8c8; }
+    .linkedin:hover { color: #0e76a8; }
+    .youtube:hover { color: #FF0000; }
+    .behance:hover { color: #1769ff; }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div id="blog" onclick="navigate(this.id)" class="social">
+      <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
+    </div>
+
+    <div id="email" onclick="navigate(this.id)" class="social">
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+    </div>
+
+    <div id="behance" onclick="navigate(this.id)" class="social">
+      <span class="icon behance"><i class="fab fa-behance"></i></span>
+    </div>
+
+    <div id="linkedin" onclick="navigate(this.id)" class="social">
+      <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+    </div>
+
+    <div id="youtube" onclick="navigate(this.id)" class="social">
+      <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+    </div>
+  </div>
+
+  <script>
+    function navigate(id) {
+      if (id === "blog") {
+        window.open("https://shiiromeo.notion.site/Quynh-Ngan-Gallery-2a45dbd5df6680e298f3ee9e69bb1748?source=copy_link", '_blank').focus();
+      } 
+      else if (id === "email") {
+        window.open("mailto:ngan.trng24@gmail.com", '_blank').focus();
+      } 
+      else if (id === "linkedin") {
+        window.open("https://www.linkedin.com/in/ng%E1%BB%8Dc-qu%E1%BB%B3nh-ng%C3%A2n-tr%E1%BA%A7n-883055391/", '_blank').focus();
+      } 
+      else if (id === "youtube") {
+        window.open("https://www.youtube.com/channel/UCgo8oX3CvHk-Ugpi8vsN_VQ", '_blank').focus();
+      } 
+      else if (id === "behance") {
+        window.open("https://www.behance.net/ngantrng", '_blank').focus();
+      }
+    } // <-- The function MUST end after all the "else if" blocks
+  </script>
+
+</body>
+</html>
