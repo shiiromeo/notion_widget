@@ -87,6 +87,9 @@
       margin: 10px;
       cursor: pointer;
     }
+    .behance:hover {
+  color: #1769ff;
+    }
   </style>
 
 </head>
@@ -109,7 +112,11 @@
       </div>
       <!-- End email Icon -->
 
-
+      <!-- Start Behance Icon -->
+      <div id="behance" onclick="navigate(this.id)" class="social">
+        <span class="icon behance"><i class="fab fa-behance"></i></span>
+      </div>
+       <!-- End Behance Icon -->
 
 
       <!-- Start linkedin Icon -->
@@ -178,7 +185,9 @@
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
       }
-
+      else if (id === "behance") {
+  window.open("https://www.behance.net/ngantrng", '_blank').focus(); // Replace with your Behance URL
+}
     </script>
 
 
