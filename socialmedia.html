@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .notion:hover {
+      color: #000000; /* Or #37352f for Notion's specific text color */
+}
+
+/* Ensure the SVG uses the parent's color */
+.icon svg {
+  display: block;
+}
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a;
+      transition: 0.3s; /* Makes the color change smooth */
+    }
+
+    /* Hover Colors */
+    .blog:hover { color: #ffbd2f; }
+    .email:hover { color: #23c8c8; }
+    .linkedin:hover { color: #0e76a8; }
+    .youtube:hover { color: #FF0000; }
+    .behance:hover { color: #1769ff; }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="notion" onclick="navigate(this.id)" class="social">
+  <span class="icon notion">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M4.459 4.208c.746.606 1.026.56 1.748.513l11.62-.793c.746-.047 1.259.093 1.633.56l2.006 2.473c.233.28.327.513.327.886v12.13c0 .7-.327 1.213-.98 1.587l-1.54.933c-.56.327-1.166.42-1.773.466l-11.853.84c-.793.047-1.213-.14-1.633-.653l-2.006-2.52a1.5 1.5 0 0 1-.373-.933V5.561c0-.606.327-1.119.98-1.492l1.844-.886c.001 0 .001.02.001.025Zm.42 1.679l-.047 12.317c0 .14.093.28.233.373l1.587 1.96c.093.093.233.14.373.14l11.433-.793c.14 0 .233-.093.327-.233l1.54-.933c.093-.093.14-.187.14-.326V6.587c0-.14-.047-.28-.187-.373l-1.727-2.1c-.093-.093-.233-.14-.373-.093l-11.433.793c-.14.046-.28.186-.28.373h.001Zm3.36 2.1c.327-.046.653.14.746.466l1.307 4.901l1.54-5.181a.925.925 0 0 1 .933-.7l4.106-.28c.373-.047.653.187.653.513s-.093.56-.42.607l-2.147.14l-1.867 6.3l2.287-.14c.327-.047.56.14.653.42l.373 1.167c.047.28-.14.56-.466.606l-4.714.327c-.327.047-.653-.14-.746-.466l-1.353-4.995l-1.587 5.368c-.093.28-.373.466-.7.466L5.3 18.06c-.327.047-.653-.187-.653-.513s.093-.56.42-.607l2.006-.14l1.914-6.394l-2.147.14c-.327.047-.56-.14-.653-.42l-.327-1.121c-.047-.28.14-.56.466-.606l2.34-.14v-.28Z"/>
+    </svg>
+  </span>
+</div>
+
+    <div id="email" onclick="navigate(this.id)" class="social">
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+    </div>
+
+    <div id="behance" onclick="navigate(this.id)" class="social">
+      <span class="icon behance"><i class="fab fa-behance"></i></span>
+    </div>
+
+    <div id="linkedin" onclick="navigate(this.id)" class="social">
+      <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+    </div>
+
+    <div id="youtube" onclick="navigate(this.id)" class="social">
+      <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+    </div>
+  </div>
+
+  <script>
+    function navigate(id) {
+function navigate(id) {
+  if (id === "notion") {
+    window.open("https://shiiromeo.notion.site/Quynh-Ngan-Gallery-2a45dbd5df6680e298f3ee9e69bb1748?source=copy_link", '_blank').focus();
+  }
+  // ... keep your other else if statements here
+}
+      else if (id === "email") {
+        window.open("mailto:ngan.trng24@gmail.com", '_blank').focus();
+      } 
+      else if (id === "linkedin") {
+        window.open("https://www.linkedin.com/in/ng%E1%BB%8Dc-qu%E1%BB%B3nh-ng%C3%A2n-tr%E1%BA%A7n-883055391/", '_blank').focus();
+      } 
+      else if (id === "youtube") {
+        window.open("https://www.youtube.com/channel/UCgo8oX3CvHk-Ugpi8vsN_VQ", '_blank').focus();
+      } 
+      else if (id === "behance") {
+        window.open("https://www.behance.net/ngantrng", '_blank').focus();
+      }
+    } // <-- The function MUST end after all the "else if" blocks
+  </script>
+
+</body>
+</html>
